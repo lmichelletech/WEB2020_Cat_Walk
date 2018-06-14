@@ -1,0 +1,39 @@
+.cat{
+    background: url("cat_sprite.png") 0 0 no-repeat;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+    animation: walk 1s steps(12) 5, 
+    runtrans 1s steps(12) 1 5s,
+    run 1s steps(13) infinite 6s;
+}
+
+@keyframes walk {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -2400px;
+    }
+
+}
+
+@keyframes runtrans {
+    0% {
+        background-position: -400px 0;
+    }
+    100% {
+        background-position: -400px -2400px;
+    }
+
+}
+
+@keyframes run {
+    0% {
+        background-position: -800px 0;
+    }
+    100% {
+        background-position: -800px -2600px;
+    }
+
+}
